@@ -12,7 +12,7 @@ npm install
 npm start
 ```
 
-This will start `json-server` at `localhost:3000` and a Webpack server at `localhost:8080`.
+This will start `json-server` at `localhost:3000` and a Gulp server at `localhost:8080`.
 
 ## Figma project
 
