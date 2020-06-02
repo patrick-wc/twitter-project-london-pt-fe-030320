@@ -1,0 +1,110 @@
+.page--login {
+  justify-content: center;
+}
+
+#login {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 291px;
+
+  label {
+    width: 100%;
+  }
+
+  input {
+    width: 100%;
+    display: block;
+    background-color: $black;
+    color: $form-input;
+    border: 0;
+    border-bottom: 1px solid $yellow;
+    margin-bottom: 20px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 5px 10px;
+
+    &::placeholder {
+      color: $form-placeholder;
+    }
+  }
+
+  #submit {
+    align-self: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    margin-top: 20px;
+    background-color: $yellow;
+    color: $black;
+    padding: 8px 35px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    border: 0;
+    border-radius: 4px;
+    display: block;
+  }
+}
+
+.alert {
+  display: flex;
+  align-items: center;
+  border: 1px solid;
+  padding: 1em;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  animation: slide-up 250ms ease;
+
+  p {
+    margin: 0;
+  }
+}
+
+.alert[data-state="error"] {
+  border-color: red;
+}
+
+.alert[data-state="success"] {
+  border-color: green;
+}
+
+.alert__icon {
+  font-size: 1.6em;
+  flex-shrink: 0;
+}
+
+.alert__content {
+  padding-left: 0.8rem;
+}
+
+.alert__content b {
+  display: block;
+}
+
+/**
+ * ANIMATIONS
+ */
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes slide-down {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+}

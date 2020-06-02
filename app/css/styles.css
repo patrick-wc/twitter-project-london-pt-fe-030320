@@ -1,0 +1,767 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+     ========================================================================== */
+/**
+   * Remove the margin in all browsers.
+   */
+body {
+  margin: 0; }
+
+/**
+   * Render the `main` element consistently in IE.
+   */
+main {
+  display: block; }
+
+/**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+     ========================================================================== */
+/**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+     ========================================================================== */
+/**
+   * Remove the gray background on active links in IE 10.
+   */
+a {
+  background-color: transparent; }
+
+/**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+   * Add the correct font size in all browsers.
+   */
+small {
+  font-size: 80%; }
+
+/**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+     ========================================================================== */
+/**
+   * Remove the border on images inside links in IE 10.
+   */
+img {
+  border-style: none; }
+
+/* Forms
+     ========================================================================== */
+/**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+
+/**
+   * Remove the inner border and padding in Firefox.
+   */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+   * Restore the focus styles unset by the previous rule.
+   */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+   * Correct the padding in Firefox.
+   */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+progress {
+  vertical-align: baseline; }
+
+/**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+textarea {
+  overflow: auto; }
+
+/**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+     ========================================================================== */
+/*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+details {
+  display: block; }
+
+/*
+   * Add the correct display in all browsers.
+   */
+summary {
+  display: list-item; }
+
+/* Misc
+     ========================================================================== */
+/**
+   * Add the correct display in IE 10+.
+   */
+template {
+  display: none; }
+
+/**
+   * Add the correct display in IE 10.
+   */
+[hidden] {
+  display: none; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Geneva, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh; }
+
+.o-wrapper {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 414px;
+  position: relative; }
+
+.page--login {
+  justify-content: center; }
+
+#login {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 291px; }
+  #login label {
+    width: 100%; }
+  #login input {
+    width: 100%;
+    display: block;
+    background-color: #000000;
+    color: #dddddd;
+    border: 0;
+    border-bottom: 1px solid #faff00;
+    margin-bottom: 20px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 5px 10px; }
+    #login input::placeholder {
+      color: rgba(221, 221, 221, 0.5); }
+  #login #submit {
+    align-self: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    margin-top: 20px;
+    background-color: #faff00;
+    color: #000000;
+    padding: 8px 35px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    border: 0;
+    border-radius: 4px;
+    display: block; }
+
+.alert {
+  display: flex;
+  align-items: center;
+  border: 1px solid;
+  padding: 1em;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  animation: slide-up 250ms ease; }
+  .alert p {
+    margin: 0; }
+
+.alert[data-state="error"] {
+  border-color: red; }
+
+.alert[data-state="success"] {
+  border-color: green; }
+
+.alert__icon {
+  font-size: 1.6em;
+  flex-shrink: 0; }
+
+.alert__content {
+  padding-left: 0.8rem; }
+
+.alert__content b {
+  display: block; }
+
+/**
+ * ANIMATIONS
+ */
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(1rem); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes slide-down {
+  0% {
+    opacity: 1;
+    transform: translateY(0); }
+  100% {
+    opacity: 0;
+    transform: translateY(-1rem); } }
+
+.page--default {
+  background: linear-gradient(0deg, #ffffff, #000000), #000000; }
+  .page--default .o-wrapper {
+    background-color: #000000; }
+
+.twitter-header {
+  display: flex;
+  font-size: 14px;
+  line-height: 16px;
+  width: 362px;
+  margin-bottom: 60px; }
+
+.twitter-header__form label {
+  width: 86px;
+  height: 86px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #faff00;
+  margin-right: 28px;
+  cursor: pointer; }
+  .twitter-header__form label img {
+    transition: transform 0.3s; }
+  .twitter-header__form label:hover img, .twitter-header__form label:focus img {
+    transform: translateY(-0.2em); }
+
+.twitter-header__text {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+  font-weight: 300;
+  position: relative;
+  border-bottom: 1px solid #dd00f0;
+  width: 100%; }
+  .twitter-header__text:after {
+    position: absolute;
+    content: "";
+    width: 178px;
+    border-bottom: 1px solid #ffffff;
+    bottom: -10px; }
+  .twitter-header__text h1 {
+    font-size: 24px;
+    line-height: 28px;
+    grid-column: 1 / 3;
+    margin-top: 0;
+    margin-bottom: 4px; }
+  .twitter-header__text strong {
+    font-weight: bold; }
+
+.twitter-header .input-file {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1; }
+
+.tweet {
+  width: 100%;
+  max-width: 344px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 37px; }
+  .tweet:last-of-type {
+    margin-bottom: 0; }
+
+.tweet__header {
+  width: 100%;
+  background-color: #faff00;
+  color: #000000;
+  padding: 13px 24px;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+  border-radius: 4px 4px 0 0; }
+  .tweet__header .date {
+    text-align: right;
+    margin: 0; }
+
+.tweet__body {
+  width: 100%;
+  background-color: #ffffff;
+  color: #4e4e4e;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 16px 25px 6px 25px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0 0 4px 4px; }
+
+.tweet__actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-top: 1px solid #dddddd; }
+  .tweet__actions button {
+    border: 0;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: #909090;
+    transition: color 0.3s;
+    cursor: pointer;
+    padding: 10px 24px; }
+    .tweet__actions button svg {
+      margin-right: 4px; }
+    .tweet__actions button path {
+      transition: fill 0.3s; }
+    .tweet__actions button:hover, .tweet__actions button:focus {
+      color: #dd00f0; }
+      .tweet__actions button:hover path, .tweet__actions button:focus path {
+        fill: #dd00f0; }
+    .tweet__actions button.active {
+      color: #dd00f0; }
+      .tweet__actions button.active path {
+        fill: #dd00f0; }
+
+.tweet-action {
+  background-color: #000000;
+  border: 2px solid #faff00;
+  border-radius: 100%;
+  width: 74px;
+  height: 74px;
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s, transform 0.3s; }
+  .tweet-action svg path {
+    transition: fill 0.3s; }
+  .tweet-action:hover, .tweet-action:focus {
+    transform: scale(1.05); }
+
+.comment-form {
+  border-top: 1px solid #dddddd;
+  padding-top: 12px; }
+
+.comment-form--hidden {
+  display: none; }
+
+.comment-form__textarea {
+  width: 100%;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 16px;
+  background-color: #ffffff;
+  color: #2d2d2d;
+  border: 1px solid rgba(144, 144, 144, 0.6);
+  border-radius: 4px;
+  padding: 10px 8px;
+  outline: none;
+  transition: border-color 0.3s; }
+  .comment-form__textarea:hover, .comment-form__textarea:focus {
+    border: 1px solid #909090; }
+  .comment-form__textarea::placeholder {
+    color: rgba(144, 144, 144, 0.6); }
+
+.comment-form__actions {
+  display: flex;
+  align-items: center; }
+
+.comment-form__back {
+  display: inline-block;
+  padding: 24px 24px 24px 0;
+  order: 1; }
+  .comment-form__back path {
+    fill: #909090;
+    transition: fill 0.3s; }
+  .comment-form__back:hover path, .comment-form__back:focus path {
+    fill: #000000; }
+
+.comment-form__submit {
+  background-color: #000000;
+  color: #faff00;
+  padding: 7px 19px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  cursor: pointer;
+  transition: transform 0.3s;
+  border: 0;
+  border-radius: 4px;
+  margin-left: auto;
+  order: 2; }
+  .comment-form__submit:hover, .comment-form__submit:focus {
+    transform: scale(1.05); }
+  .comment-form__submit :active {
+    transform: translateY(0.2em); }
+
+.page--create-tweet {
+  background: linear-gradient(0deg, #ffffff, #000000), #000000; }
+  .page--create-tweet main {
+    background-color: #000000; }
+
+.create-tweet-header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #faff00;
+  padding: 0 20px 0 0; }
+
+.create-tweet-header__link {
+  display: inline-block;
+  padding: 30px 20px;
+  transition: transform 0.3s; }
+  .create-tweet-header__link:hover, .create-tweet-header__link:focus {
+    transform: scale(1.1); }
+
+.create-tweet-header__button {
+  color: #000000;
+  padding: 7px 19px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  cursor: pointer;
+  background-color: #faff00;
+  transition: transform 0.3s;
+  border: 0;
+  border-radius: 4px;
+  position: absolute;
+  top: 24px;
+  right: 20px; }
+  .create-tweet-header__button:hover, .create-tweet-header__button:focus {
+    transform: scale(1.05); }
+  .create-tweet-header__button :active {
+    transform: translateY(0.2em); }
+
+.create-tweet-textarea {
+  margin: 43px 20px;
+  width: calc(100% - 40px);
+  font-size: 14px;
+  line-height: 16px;
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid rgba(250, 255, 0, 0.5);
+  border-radius: 4px;
+  padding: 16px 10px;
+  outline: none;
+  transition: border-color 0.3s; }
+  .create-tweet-textarea:hover, .create-tweet-textarea:focus {
+    border-color: #faff00; }
+  .create-tweet-textarea::placeholder {
+    color: rgba(250, 255, 0, 0.6); }
+
+.page--tweet-page {
+  background: linear-gradient(0deg, #ffffff, #000000), #000000; }
+  .page--tweet-page .o-wrapper {
+    background-color: #000000;
+    padding-left: 20px;
+    padding-right: 20px; }
+  .page--tweet-page .create-tweet-header__link {
+    color: #faff00;
+    text-decoration: none; }
+    .page--tweet-page .create-tweet-header__link img {
+      margin-right: 10px; }
+  .page--tweet-page .twitter-header {
+    margin-bottom: 26.5px; }
+  .page--tweet-page .twitter-header__text {
+    display: block;
+    height: 57px; }
+  .page--tweet-page .comment-form {
+    border: 0;
+    padding-top: 0; }
+  .page--tweet-page .comment-form__textarea {
+    background-color: #000000;
+    color: #faff00;
+    border-color: rgba(250, 255, 0, 0.5); }
+    .page--tweet-page .comment-form__textarea:hover, .page--tweet-page .comment-form__textarea:focus {
+      border-color: #faff00; }
+  .page--tweet-page .comment-form__back {
+    padding-top: 6px; }
+    .page--tweet-page .comment-form__back path {
+      fill: rgba(250, 255, 0, 0.75);
+      transition: fill 0.3s; }
+    .page--tweet-page .comment-form__back:hover path, .page--tweet-page .comment-form__back:focus path {
+      fill: #faff00; }
+  .page--tweet-page .comment-form__submit {
+    background-color: #faff00;
+    color: #000000; }
+  .page--tweet-page .tweet-action {
+    background-color: #faff00;
+    border: 2px solid #000000; }
+    .page--tweet-page .tweet-action:hover, .page--tweet-page .tweet-action:focus {
+      background-color: #faff00;
+      border-color: #000000; }
+      .page--tweet-page .tweet-action:hover svg path, .page--tweet-page .tweet-action:focus svg path {
+        fill: #000000; }
+
+.create-tweet-header {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #faff00; }
+
+.tweet-page-tweet__footer {
+  justify-content: start;
+  border-bottom: 1px solid #ffffff;
+  margin-bottom: 29px; }
+  .tweet-page-tweet__footer button {
+    background-color: #000000;
+    color: #ffffff; }
+    .tweet-page-tweet__footer button path {
+      fill: #ffffff; }
+    .tweet-page-tweet__footer button:hover, .tweet-page-tweet__footer button:focus {
+      color: #dd00f0; }
+      .tweet-page-tweet__footer button:hover path, .tweet-page-tweet__footer button:focus path {
+        fill: #dd00f0; }
+    .tweet-page-tweet__footer button .active {
+      color: #dd00f0; }
+      .tweet-page-tweet__footer button .active path {
+        fill: #dd00f0; }
+
+.small-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  text-transform: uppercase; }
+
+.tweet-page-comment {
+  border-bottom: 1px solid #fff;
+  margin-bottom: 20px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 115%; }
+
+.tweet-page-comment__header {
+  display: flex; }
+  .tweet-page-comment__header .twitter-header__text {
+    font-size: 14px;
+    line-height: 16px;
+    height: 40px;
+    width: fit-content; }
+    .tweet-page-comment__header .twitter-header__text:after {
+      width: 68px; }
+    .tweet-page-comment__header .twitter-header__text .username {
+      font-style: italic;
+      display: inline-block;
+      margin-left: 20px; }
+
+.twitter-header__avatar {
+  margin: 0;
+  margin-right: 9px; }
+  .twitter-header__avatar img {
+    border-radius: 100%; }
+
+.u-margin-bottom {
+  margin-bottom: 20px; }

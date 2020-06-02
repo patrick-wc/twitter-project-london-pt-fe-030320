@@ -1,11 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./css/styles.css" />
-		<title>Twitter</title>
-	</head>
-	<body></body>
-	<script type="module" src="./js/index.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Twitter Login</title>
+  </head>
+  <body class="page--login">
+    <img
+      src="./images/login-person.svg"
+      width="114"
+      height="146"
+      alt="human sitting"
+    />
+
+    <form id="login" action="index.html">
+      <label for="username"></label>
+      <input
+        class="username"
+        type="text"
+        id="username"
+        name="username"
+        placeholder="User Name"
+      />
+      <label for="password"></label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Password"
+      />
+      <input id="submit" type="submit" value="Login" />
+    </form>
+    <div aria-atomic="true" role="alert" class="signup__alert"></div>
+  </body>
+  <script type="module" src="./js/index.js"></script>
 </html>

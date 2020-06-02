@@ -1,0 +1,163 @@
+.page--tweet-page {
+  background: linear-gradient(0deg, #ffffff, #000000), #000000;
+
+  .o-wrapper {
+    background-color: $black;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .create-tweet-header__link {
+    color: $yellow;
+    text-decoration: none;
+
+    img {
+      margin-right: 10px;
+    }
+  }
+
+  .twitter-header {
+    margin-bottom: 26.5px;
+  }
+
+  .twitter-header__text {
+    display: block;
+    height: 57px;
+  }
+
+  .comment-form {
+    border: 0;
+    padding-top: 0;
+  }
+
+  .comment-form__textarea {
+    background-color: $black;
+    color: $yellow;
+    border-color: rgba($yellow, 0.5);
+
+    @include hocus() {
+      border-color: $yellow;
+    }
+  }
+
+  .comment-form__back {
+    padding-top: 6px;
+
+    path {
+      fill: rgba($yellow, 0.75);
+      transition: fill 0.3s;
+    }
+
+    @include hocus() {
+      path {
+        fill: $yellow;
+      }
+    }
+  }
+
+  .comment-form__submit {
+    background-color: $yellow;
+    color: $black;
+  }
+
+  .tweet-action {
+    background-color: $yellow;
+    border: 2px solid $black;
+
+    @include hocus() {
+      background-color: $yellow;
+      border-color: $black;
+      // transform: scale(1.05);
+
+      svg {
+        path {
+          fill: $black;
+        }
+      }
+    }
+  }
+}
+
+.create-tweet-header {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: $yellow;
+}
+
+.tweet-page-tweet__footer {
+  justify-content: start;
+  border-bottom: 1px solid $white;
+  margin-bottom: 29px;
+
+  button {
+    background-color: $black;
+    color: $white;
+
+    path {
+      fill: $white;
+    }
+
+    @include hocus() {
+      color: $mauve;
+
+      path {
+        fill: $mauve;
+      }
+    }
+
+    .active {
+      color: $mauve;
+
+      path {
+        fill: $mauve;
+      }
+    }
+  }
+}
+
+.small-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.tweet-page-comment {
+  border-bottom: 1px solid #fff;
+  margin-bottom: 20px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 115%;
+}
+
+.tweet-page-comment__header {
+  display: flex;
+
+  .twitter-header__text {
+    font-size: 14px;
+    line-height: 16px;
+    height: 40px;
+    width: fit-content;
+
+    &:after {
+      width: 68px;
+    }
+
+    .username {
+      font-style: italic;
+      display: inline-block;
+      margin-left: 20px;
+    }
+  }
+}
+
+.twitter-header__avatar {
+  margin: 0;
+  margin-right: 9px;
+
+  img {
+    border-radius: 100%;
+  }
+}

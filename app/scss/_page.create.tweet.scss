@@ -1,0 +1,71 @@
+.page--create-tweet {
+  background: linear-gradient(0deg, #ffffff, #000000), #000000;
+
+  main {
+    background-color: $black;
+  }
+}
+
+.create-tweet-header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid $yellow;
+  padding: 0 20px 0 0;
+}
+
+.create-tweet-header__link {
+  display: inline-block;
+  padding: 30px 20px;
+  transition: transform 0.3s;
+
+  @include hocus() {
+    transform: scale(1.1);
+  }
+}
+
+.create-tweet-header__button {
+  color: $black;
+  padding: 7px 19px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  cursor: pointer;
+  background-color: $yellow;
+  transition: transform 0.3s;
+  border: 0;
+  border-radius: 4px;
+  position: absolute;
+  top: 24px;
+  right: 20px;
+  // margin-bottom: 21px;
+
+  @include hocus() {
+    transform: scale(1.05);
+  }
+
+  :active {
+    transform: translateY(0.2em);
+  }
+}
+
+.create-tweet-textarea {
+  margin: 43px 20px;
+  width: calc(100% - 40px);
+  font-size: 14px;
+  line-height: 16px;
+  background-color: $black;
+  color: $white;
+  border: 1px solid rgba($yellow, 0.5);
+  border-radius: 4px;
+  padding: 16px 10px;
+  outline: none;
+  transition: border-color 0.3s;
+
+  @include hocus() {
+    border-color: $yellow;
+  }
+
+  &::placeholder {
+    color: rgba($yellow, 0.6);
+  }
+}
