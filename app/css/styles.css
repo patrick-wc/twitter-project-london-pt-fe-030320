@@ -545,6 +545,9 @@ body {
   bottom: 25px;
   right: 25px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: background-color 0.3s, border-color 0.3s, transform 0.3s; }
   .tweet-action svg path {
     transition: fill 0.3s; }
